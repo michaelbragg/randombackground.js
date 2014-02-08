@@ -1,5 +1,5 @@
 /*
- *  randomBackground.js - v0.1.0
+ *  randomBackground.js - v0.1.1
  *  Attach a random background image to an element from a user supplied list on page load.
  *  https://github.com/michaelbragg/randombackground.js/
  *

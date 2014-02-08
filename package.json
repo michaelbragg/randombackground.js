@@ -1,6 +1,6 @@
 {
   "name": "randomBackground.js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "Attach a random background image to an element from a user supplied list on page load.",
   "author": "Michael Bragg <michael@michaelbragg.net>",
