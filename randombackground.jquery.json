@@ -8,7 +8,7 @@
     "background",
     "image"
   ],
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": {
     "name": "Michael Bragg",
     "email": "michael@michaelbragg.net",
@@ -22,7 +22,7 @@
   ],
   "bugs": "https://github.com/michaelbragg/randombackground.js/issues",
   "homepage": "https://github.com/michaelbragg/randombackground.js/",
-  "docs": "https://github.com/michaelbragg/randombackground.js#readme.md",
+  "docs": "https://github.com/michaelbragg/randombackground.js#readme",
   "dependencies": {
     "jquery": ">=1.10"
   }
