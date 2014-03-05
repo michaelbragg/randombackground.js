@@ -20,7 +20,7 @@ var randomBackground = randomBackground || {};
     var _images = randomBackground.config.images,
         _randomNumber = Math.floor(Math.random()*(_images.length));
 
-    $(randomBackground.config.parent).css('background-image', 'url("+randomBackground.config.path+_images[_randomNumber]+")');
+    $(randomBackground.config.parent).css('background-image', 'url('+randomBackground.config.path+_images[_randomNumber]+')');
 
     // If you need to check the image being outputted.
     // Remove the comments from the line below:
