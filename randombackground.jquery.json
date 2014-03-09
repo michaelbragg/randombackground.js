@@ -20,7 +20,7 @@
       "url": "http://opensource.org/licenses/MIT/"
     }
   ],
-  "bugs": "https://github.com/michaelbragg/randombackground.js/issues",
+  "bugs": "https://github.com/michaelbragg/randombackground.js/issues/",
   "homepage": "https://github.com/michaelbragg/randombackground.js/",
   "docs": "https://github.com/michaelbragg/randombackground.js#readme",
   "dependencies": {
