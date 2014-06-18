@@ -6,8 +6,10 @@ var randomBackground = randomBackground || {};
 
   randomBackground.config = {
       parent: '.hero'
-     ,path: 'path/to/image/'
-     ,images : ['image01.jpg', 'image02.jpg', 'image03.jpg']
+     ,background: '.hero'
+     ,path: 'http://placehold.it/'
+     ,images : ['300x250.png', '300x250.png', '300x250.png']
+     ,bgcolor: ['#000', '#ccc', '#fafafa']
     };
 
   randomBackground.init = function(config) {
@@ -18,13 +20,17 @@ var randomBackground = randomBackground || {};
     }
 
     var _images = randomBackground.config.images,
-        _randomNumber = Math.floor(Math.random()*(_images.length));
+        _bgcolor = randomBackground.config.bgcolor,
+        _randomNumber = Math.floor(Math.random()*(_images.length)),
+        _parent = $(randomBackground.config.parent),
+        _background = $(randomBackground.config.background);
 
-    $(randomBackground.config.parent).css('background-image', 'url('+randomBackground.config.path+_images[_randomNumber]+')');
+    _parent.css('background-image', 'url('+randomBackground.config.path+_images[_randomNumber]+')');
+    _background.css('background-color', _bgcolor[_randomNumber]);
 
     // If you need to check the image being outputted.
     // Remove the comments from the line below:
-    //console.log(_images[_randomNumber]);
+    // console.log(_images[_randomNumber],randomBackground.config.path+_images[_randomNumber],_bgcolor[_randomNumber]);
 
   };
 
@@ -40,7 +46,7 @@ var randomBackground = randomBackground || {};
 
   $(document).ready(function() {
 
-    randomBackground.init( { parent: '.hero', path: 'demo/img/', images: ['background_01.png', 'background_02.jpg', 'background_03.jpg'] });
+    randomBackground.init( { parent: '.hero', background: '.hero', path: 'demo/img/', images: ['background_01.png', 'background_02.jpg', 'background_03.jpg'], bgcolor: ['#000', '#ccc', '#fafafa'] });
 
   }); */
 

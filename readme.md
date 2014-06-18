@@ -25,7 +25,7 @@ $(document).ready(function() {
   // pass a object as an argument for the init function
   // eg. randomBackground.init({ images: 'image01.jpg', 'image02.jpg' });
 
-  randomBackground.init( { parent: '.hero', path: 'demo/img/', images: ['background_01.png', 'background_02.jpg', 'background_03.jpg'] });
+  randomBackground.init( { parent: '.hero', background: '.hero', path: 'demo/img/', images: ['background_01.png', 'background_02.jpg', 'background_03.jpg'], bgcolor: ['#000', '#ccc', '#fafafa'] });
 
 });
 ```
